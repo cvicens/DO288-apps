@@ -2,6 +2,6 @@
 # This is a YAML-formatted file.
 
 nexusServiceName: nexus3
-hostname: default
-imageName: quay.io/REPLACE_QUAY_USER/nexus3:latest
-memoryLimit: 
+hostname: nexus3-piuxmf.apps.na46.prod.nextcle.com
+imageName: quay.io/cvicens/nexus3:latest
+memoryLimit: 2703Mi

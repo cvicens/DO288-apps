@@ -3,7 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   labels:
     app: {{ .Values.nexusServiceName }}
-  name: REPLACE_PVC
+  name: nexus-data-pvc
 spec:
   accessModes:
   - ReadWriteOnce
