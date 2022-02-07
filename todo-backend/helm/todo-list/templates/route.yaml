@@ -1,0 +1,12 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: {{ include "todo-backend.fullname" . }}
+  labels:
+    {{- include "todo-backend.labels" . | nindent 4 }}
+spec:
+  port:
+    targetPort: 3000
+  to:
+    kind: "Service"
+    name: {{ include "todo-backend.fullname" . }}
